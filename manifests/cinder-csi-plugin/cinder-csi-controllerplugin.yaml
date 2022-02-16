@@ -74,7 +74,7 @@ spec:
           image: k8s.gcr.io/sig-storage/csi-resizer:v0.5.1
           args:
             - "--csi-address=$(ADDRESS)"
-            - "--csiTimeout=3m"
+            - "--timeout=3m"
           env:
             - name: ADDRESS
               value: /var/lib/csi/sockets/pluginproxy/csi.sock
